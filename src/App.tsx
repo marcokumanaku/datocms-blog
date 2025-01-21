@@ -7,10 +7,9 @@ import "./App.css";
 const App: React.FC = () => {
   return (
     <div className='App'>
-      <h1>My DatoCMS Blog</h1>
       <Routes>
         <Route path='/' element={<Blog />} />
-        <Route path='/article/:id' element={<ArticleDetail />} />
+        <Route path='/news/:slug' element={<ArticleDetail />} />
       </Routes>
     </div>
   );
