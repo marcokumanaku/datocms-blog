@@ -3,9 +3,15 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { fetchDatoCMSData } from "../../api/queries";
 import parse, { domToReact } from "html-react-parser";
-// Recupero dei dati necessari per la pagina Article da DatoCMS
 import { ARTICLE_QUERY } from "../../api/queries";
-
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  FacebookIcon,
+  XIcon,
+  LinkedinIcon,
+} from "react-share";
 
 const Article: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -21,8 +27,8 @@ const Article: React.FC = () => {
     );
 
   const article = data.data.article;
+  const shareUrl = window.location.href;
 
-// Gestione grafica html del corpo dell'articolo
   const options = {
     replace: ({ name, attribs, children }: any) => {
       if (!attribs) return;
@@ -54,6 +60,17 @@ const Article: React.FC = () => {
         </div>
       </div>
       <div className='text-md text-left'>{parse(article.body, options)}</div>
+      <div className='flex justify-center mt-8 space-x-4'>
+        <FacebookShareButton url={shareUrl}>
+          <FacebookIcon size={32} round />
+        </FacebookShareButton>
+        <TwitterShareButton url={shareUrl} title={article.title}>
+          <XIcon size={32} round />
+        </TwitterShareButton>
+        <LinkedinShareButton url={shareUrl} title={article.title}>
+          <LinkedinIcon size={32} round />
+        </LinkedinShareButton>
+      </div>
     </>
   );
 };
