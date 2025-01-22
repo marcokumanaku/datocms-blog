@@ -1,7 +1,7 @@
 
 
 import { Link } from "react-router-dom";
-import Article from "../components/Blog/Article";
+import Article from "../components/Blog/Article/Article";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 
