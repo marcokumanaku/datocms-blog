@@ -1,10 +1,13 @@
 import axios from "axios";
 
+const baseURL = import.meta.env.VITE_BASEURL_DATOCMS ?? "";
+const token = import.meta.env.VITE_TOKEN_DATOCMS ?? "";
+
 // Configurazione client per DatoCMS
 const datoCMSClient = axios.create({
-  baseURL: "https://graphql.datocms.com/",
+  baseURL: baseURL,
   headers: {
-    Authorization: `Bearer 23d68bb0bba7a845ee6e58c35fd841`,
+    Authorization: `Bearer ${token}`,
   },
 });
 
