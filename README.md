@@ -22,7 +22,7 @@ This project is a blog created using React, Tailwind CSS, and DatoCMS. It includ
    ```
 
 2. Install dependencies:
-  ```sh
+   ```sh
    npm install
    ```
 
@@ -37,8 +37,6 @@ This project is a blog created using React, Tailwind CSS, and DatoCMS. It includ
    ```
 
 5. Project Structure
-   ```sh
-   - components: Contains React components.
-   - pages: Contains the main pages of the application.
-   - api: Contains queries for fetching data from DatoCMS.
-   ```
+   - **components**: Contains React components.
+   - **pages**: Contains the main pages of the application.
+   - **api**: Contains queries for fetching data from DatoCMS.
