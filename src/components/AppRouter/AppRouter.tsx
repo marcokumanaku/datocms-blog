@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RedirectPage from "../../pages/RedirectPage";
 import BlogPage from "../../pages/BlogPage";
 import ArticlePage from "../../pages/ArticlePage";
@@ -9,13 +9,15 @@ import Footer from "../Footer/Footer";
 const AppRouter = () => {
   return (
     <>
-      <Header />
-        <Routes>
+     <BrowserRouter>
+        <Header />
+            <Routes>
             <Route path='/' element={<RedirectPage />} />
             <Route path='/blog' element={<BlogPage />} />
             <Route path='/blog/:category/:slug' element={<ArticlePage />} />
-        </Routes>
-      <Footer />
+            </Routes>
+        <Footer />
+     </BrowserRouter>
     </>
   );
 };
