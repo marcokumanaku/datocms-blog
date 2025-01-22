@@ -17,7 +17,7 @@ This project is a blog created using React, Tailwind CSS, and DatoCMS. It includ
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/datocms-blog.git
+   git clone https://github.com/marcokumanaku/datocms-blog.git
    cd datocms-blog
    ```
 
