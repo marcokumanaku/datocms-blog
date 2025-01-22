@@ -9,7 +9,7 @@ import {
   TwitterShareButton,
   LinkedinShareButton,
   FacebookIcon,
-  TwitterIcon,
+  XIcon,
   LinkedinIcon,
 } from "react-share";
 import Skeleton from "react-loading-skeleton";
@@ -86,7 +86,7 @@ const Article: React.FC = () => {
           <FacebookIcon size={32} round />
         </FacebookShareButton>
         <TwitterShareButton url={shareUrl} title={article.title}>
-          <TwitterIcon size={32} round />
+          <XIcon size={32} round />
         </TwitterShareButton>
         <LinkedinShareButton url={shareUrl} title={article.title}>
           <LinkedinIcon size={32} round />
