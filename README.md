@@ -19,21 +19,26 @@ This project is a blog created using React, Tailwind CSS, and DatoCMS. It includ
    ```sh
    git clone https://github.com/your-username/datocms-blog.git
    cd datocms-blog
+   ```
 
 2. Install dependencies:
   ```sh
    npm install
+   ```
 
 3. Create a .env file in the root of the project and add your environment variables:
    ```sh
    REACT_APP_DATOCMS_API_TOKEN=your-datocms-api-token
+   ```
 
 4. Start the application:
    ```sh
    npm start
+   ```
 
 5. Project Structure
    ```sh
    - components: Contains React components.
    - pages: Contains the main pages of the application.
    - api: Contains queries for fetching data from DatoCMS.
+   ```
