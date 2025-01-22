@@ -1,5 +1,6 @@
 import axios from "axios";
 
+// Configurazione client per DatoCMS
 const datoCMSClient = axios.create({
   baseURL: "https://graphql.datocms.com/",
   headers: {
