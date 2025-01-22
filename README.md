@@ -17,7 +17,7 @@ This project is a blog created using React, Tailwind CSS, and DatoCMS. It includ
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/marcokumanaku/datocms-blog.git
+   git clone https://github.com/your-username/datocms-blog.git
    cd datocms-blog
    ```
 
@@ -28,7 +28,8 @@ This project is a blog created using React, Tailwind CSS, and DatoCMS. It includ
 
 3. Create a .env file in the root of the project and add your environment variables:
    ```sh
-   REACT_APP_DATOCMS_API_TOKEN=your-datocms-api-token
+   VITE_BASEURL_DATOCMS=https://graphql.datocms.com/
+   VITE_TOKEN_DATOCMS=your-datoCMS-token
    ```
 
 4. Start the application:
