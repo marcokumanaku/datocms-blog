@@ -50,7 +50,7 @@ const Article: React.FC = () => {
       >
         <div className='absolute inset-0 bg-black opacity-50 rounded-lg'></div>
         <div className='relative z-10 flex items-center justify-center h-full'>
-          <h2 className='text-3xl font-bold text-white'>{article.title}</h2>
+          <h2 className='text-3xl font-bold text-white text-center px-2'>{article.title}</h2>
         </div>
       </div>
       <div className='text-md text-left'>{parse(article.body, options)}</div>
